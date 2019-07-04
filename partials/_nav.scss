@@ -1,30 +1,35 @@
 aside {
   @include position(absolute, 0, 0, 0, 0);
   @include flexCenter;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  flex-direction: column;
   min-height: 100vh;
-  flex-wrap: wrap;
-  background-color: rgba(0, 0, 0, 0.5);
-  width: 10%;
+  background-color: rgba($primaryBlack, 0.6);
+  width: 12%;
   padding: 20px 0;
 
-  div img {
-   
-  }
-
+  // image div
   div {
-    width: 80%;
+    width: 60%;
   }
 
   ul {
-
-
+    border: 0.5px solid grey;
     li {
-     
-      flex-direction: row;
+      flex-direction: column;
+      margin: 40px;
       a {
-        color: white;
+        color: rgba($primaryWhite, 0.5);
       }
     }
   }
+
+  
+
+}
+//  end of aside
+
+
+#{$anchorTagHoverFocus} {
+  color: $primaryWhite;
 }

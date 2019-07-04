@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Cabin:400,400i,500&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,700i&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Great+Vibes&display=swap");
 html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
@@ -191,23 +192,12 @@ html {
   clip: rect(0 0 0);
   overflow: hidden; }
 
+html {
+  font-size: 62.5%; }
+
 body {
   font-family: "Playfair Display", serif;
   font-weight: 700; }
-
-h1,
-h2,
-h3 {
-  font-family: "Cabin", sans-serif; }
-
-em {
-  font-style: italic; }
-
-span {
-  font-size: 1rem; }
-
-html {
-  font-size: 62.5%; }
 
 body {
   font-size: 10px;
@@ -217,11 +207,18 @@ h1 {
   font-size: 3.6rem; }
 
 h2 {
-  width: 100%;
-  text-align: center;
-  font-size: 4.8rem; }
+  font-size: 4.8rem;
+  font-family: 'Great Vibes', cursive; }
 
 h3 {
+  font-size: 1rem; }
+
+a {
+  font-size: 12px;
+  font-size: 1.2rem;
+  font-family: 'Open Sans', sans-serif; }
+
+span {
   font-size: 1rem; }
 
 p {
@@ -266,20 +263,6 @@ button {
   background-color: #e1560e;
   border: none; }
 
-h2 {
-  padding-bottom: 30px; }
-
-/* Desktop Styles */
-/* Tablet Styles */
-@media only screen and (min-width: 401px) and (max-width: 960px) {
-  body {
-    background-color: yellow; } }
-
-/* Mobile Styles */
-@media only screen and (max-width: 400px) {
-  body {
-    background-color: red; } }
-
 header {
   background: url(../styles/images/baked-cassaro.jpeg) no-repeat;
   min-height: 100vh;
@@ -323,24 +306,32 @@ aside {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: space-evenly;
-  -ms-flex-pack: space-evenly;
-  justify-content: space-evenly;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
   min-height: 100vh;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  background-color: rgba(0, 0, 0, 0.5);
-  width: 10%;
+  background-color: rgba(35, 41, 44, 0.6);
+  width: 12%;
   padding: 20px 0; }
   aside div {
-    width: 80%; }
-  aside ul li {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row; }
-    aside ul li a {
-      color: white; }
+    width: 60%; }
+  aside ul {
+    border: 0.5px solid grey; }
+    aside ul li {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      margin: 40px; }
+      aside ul li a {
+        color: rgba(240, 240, 240, 0.5); }
+
+a:focus, a:hover {
+  color: #F0F0F0; }
 
 section.about {
   background: url(../styles/images/Chef-ramses-cousin-fullsize.jpeg) no-repeat;
@@ -545,3 +536,14 @@ footer {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center; }
+
+/* Desktop Styles */
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  body {
+    background-color: yellow; } }
+
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+  body {
+    background-color: red; } }

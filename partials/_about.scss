@@ -1,0 +1,30 @@
+section.about {
+  background: url(../styles/images/Chef-ramses-cousin-fullsize.jpeg) no-repeat;
+  background-size: 50%;
+  background-position: right;
+  background-color: $primaryBackground;
+  @include flexCenter;
+
+  article {
+    width: 50%;
+    margin: 100px 0;
+
+    div.name-card {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+    }
+
+    .profile-content {
+      width: 80%;
+    }
+
+    div.profile-pic {
+      width: 20%;
+
+      img {
+        border-radius: 50%;
+      }
+    }
+  }
+}

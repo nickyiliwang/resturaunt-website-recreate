@@ -1,0 +1,37 @@
+section.breakfast {
+  background: url(../styles/images/the-whitest-plate-of-fruit-dish.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  
+  .flexContainer {
+    @include flexCenter;
+    flex-wrap: wrap;
+
+    ul.breakfast-menu {
+      background-color: red;
+      width: 50%;
+
+      li {
+        div.dish-subtext {
+          @include flexCenter;
+          padding: 5px 10px 20px 0;
+
+          .separation {
+            display: flex;
+            flex-grow: 1;
+            border-bottom: 1px dotted black;
+            margin: 0 5px;
+          }
+        }
+      }
+    }
+
+    ul.left {
+    }
+
+    ul.right {
+      background-color: blue;
+    }
+  }
+}

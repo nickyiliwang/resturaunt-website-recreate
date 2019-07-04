@@ -1,0 +1,30 @@
+aside {
+  @include position(absolute, 0, 0, 0, 0);
+  @include flexCenter;
+  justify-content: space-evenly;
+  min-height: 100vh;
+  flex-wrap: wrap;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 10%;
+  padding: 20px 0;
+
+  div img {
+   
+  }
+
+  div {
+    width: 80%;
+  }
+
+  ul {
+
+
+    li {
+     
+      flex-direction: row;
+      a {
+        color: white;
+      }
+    }
+  }
+}

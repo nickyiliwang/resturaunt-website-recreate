@@ -1,0 +1,547 @@
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Cabin:400,400i,500&display=swap");
+html {
+  line-height: 1.15;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0; }
+
+article, aside, footer, header, nav, section {
+  display: block; }
+
+h1 {
+  font-size: 2em;
+  margin: .67em 0; }
+
+figcaption, figure, main {
+  display: block; }
+
+figure {
+  margin: 1em 40px; }
+
+hr {
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible; }
+
+pre {
+  font-family: monospace,monospace;
+  font-size: 1em; }
+
+a {
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects; }
+
+abbr[title] {
+  border-bottom: none;
+  text-decoration: underline;
+  -webkit-text-decoration: underline dotted;
+  text-decoration: underline dotted; }
+
+b, strong {
+  font-weight: inherit; }
+
+b, strong {
+  font-weight: bolder; }
+
+code, kbd, samp {
+  font-family: monospace,monospace;
+  font-size: 1em; }
+
+dfn {
+  font-style: italic; }
+
+mark {
+  background-color: #ff0;
+  color: #000; }
+
+small {
+  font-size: 80%; }
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sub {
+  bottom: -.25em; }
+
+sup {
+  top: -.5em; }
+
+audio, video {
+  display: inline-block; }
+
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+img {
+  border-style: none; }
+
+svg:not(:root) {
+  overflow: hidden; }
+
+button, input, optgroup, select, textarea {
+  font-family: sans-serif;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0; }
+
+button, input {
+  overflow: visible; }
+
+button, select {
+  text-transform: none; }
+
+button, html [type=button], [type=reset], [type=submit] {
+  -webkit-appearance: button; }
+
+button::-moz-focus-inner, [type=button]::-moz-focus-inner, [type=reset]::-moz-focus-inner, [type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0; }
+
+button:-moz-focusring, [type=button]:-moz-focusring, [type=reset]:-moz-focusring, [type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText; }
+
+fieldset {
+  padding: .35em .75em .625em; }
+
+legend {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  padding: 0;
+  white-space: normal; }
+
+progress {
+  display: inline-block;
+  vertical-align: baseline; }
+
+textarea {
+  overflow: auto; }
+
+[type=checkbox], [type=radio] {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0; }
+
+[type=number]::-webkit-inner-spin-button, [type=number]::-webkit-outer-spin-button {
+  height: auto; }
+
+[type=search] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px; }
+
+[type=search]::-webkit-search-cancel-button, [type=search]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit; }
+
+details, menu {
+  display: block; }
+
+summary {
+  display: list-item; }
+
+canvas {
+  display: inline-block; }
+
+template {
+  display: none; }
+
+[hidden] {
+  display: none; }
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: '';
+  clear: both;
+  height: 0; }
+
+html {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit; }
+
+.visuallyhidden:not(:focus):not(:active) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  clip: rect(0 0 0);
+  overflow: hidden; }
+
+body {
+  font-family: "Playfair Display", serif;
+  font-weight: 700; }
+
+h1,
+h2,
+h3 {
+  font-family: "Cabin", sans-serif; }
+
+em {
+  font-style: italic; }
+
+span {
+  font-size: 1rem; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  font-size: 10px;
+  font-size: 1rem; }
+
+h1 {
+  font-size: 3.6rem; }
+
+h2 {
+  width: 100%;
+  text-align: center;
+  font-size: 4.8rem; }
+
+h3 {
+  font-size: 1rem; }
+
+p {
+  font-size: 1.2rem; }
+
+footer {
+  font-family: "Cabin", sans-serif; }
+
+.wrapper {
+  max-width: 1440px;
+  width: 60%;
+  margin: 0 auto; }
+
+a {
+  text-decoration: none; }
+
+ul {
+  list-style: none; }
+
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0; }
+
+img {
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover; }
+
+a {
+  text-transform: uppercase; }
+
+section {
+  padding: 50px 0; }
+
+button {
+  padding: 10px 20px;
+  background-color: #e1560e;
+  border: none; }
+
+h2 {
+  padding-bottom: 30px; }
+
+/* Desktop Styles */
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  body {
+    background-color: yellow; } }
+
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+  body {
+    background-color: red; } }
+
+header {
+  background: url(../styles/images/baked-cassaro.jpeg) no-repeat;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative; }
+  header .header-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    height: 100vh; }
+  header div.main-text {
+    width: 60%;
+    margin: 0 auto; }
+
+aside {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+  min-height: 100vh;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 10%;
+  padding: 20px 0; }
+  aside div {
+    width: 80%; }
+  aside ul li {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row; }
+    aside ul li a {
+      color: white; }
+
+section.about {
+  background: url(../styles/images/Chef-ramses-cousin-fullsize.jpeg) no-repeat;
+  background-size: 50%;
+  background-position: right;
+  background-color: #eae5d6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  section.about article {
+    width: 50%;
+    margin: 100px 0; }
+    section.about article div.name-card {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row; }
+    section.about article .profile-content {
+      width: 80%; }
+    section.about article div.profile-pic {
+      width: 20%; }
+      section.about article div.profile-pic img {
+        border-radius: 50%; }
+
+section.gallery {
+  background-color: #23292c;
+  color: #eae5d6;
+  padding: 50px 0 0 0; }
+  section.gallery img {
+    height: 170px; }
+  section.gallery article.gallery-contents {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+  section.gallery nav.gallery-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    section.gallery nav.gallery-menu ul {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      border: 1px solid grey;
+      padding: 10px;
+      margin: 50px 0; }
+      section.gallery nav.gallery-menu ul li {
+        margin: 0 5px; }
+        section.gallery nav.gallery-menu ul li a {
+          color: #eae5d6;
+          padding-right: 5px;
+          border-right: 1px solid grey; }
+  section.gallery ul.gallery-images {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+    section.gallery ul.gallery-images li {
+      width: calc(100% / 5); }
+  section.gallery figure {
+    position: relative;
+    margin: 0; }
+  section.gallery figcaption {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    display: none;
+    color: white; }
+  section.gallery figure:hover figcaption {
+    background-color: rgba(0, 0, 0, 0.5);
+    display: block; }
+
+section.services {
+  background-color: #F0F0F0; }
+  section.services article.services-contents {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+  section.services .services-cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    section.services .services-cards figure {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      width: calc(100% / 4);
+      text-align: center; }
+      section.services .services-cards figure div {
+        width: 50%; }
+
+section.breakfast {
+  background: url(../styles/images/the-whitest-plate-of-fruit-dish.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh; }
+  section.breakfast .flexContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+    section.breakfast .flexContainer ul.breakfast-menu {
+      background-color: red;
+      width: 50%; }
+      section.breakfast .flexContainer ul.breakfast-menu li div.dish-subtext {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        padding: 5px 10px 20px 0; }
+        section.breakfast .flexContainer ul.breakfast-menu li div.dish-subtext .separation {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-flex: 1;
+          -ms-flex-positive: 1;
+          flex-grow: 1;
+          border-bottom: 1px dotted black;
+          margin: 0 5px; }
+    section.breakfast .flexContainer ul.right {
+      background-color: blue; }
+
+footer {
+  background: url(../styles/images/Icons/map.png);
+  background-size: contain;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-color: #23292c;
+  height: 70vh; }
+  footer form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }

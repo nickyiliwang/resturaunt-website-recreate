@@ -1,0 +1,127 @@
+// Google fonts imports
+
+// Fonts
+// Open Sans (Google Fonts)
+// Playfair Display (Google Fonts)
+// Great Vibes (Google Fonts)
+
+// font-family: 'Playfair Display', serif;
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700&display=swap");
+
+// font-family: 'Cabin', sans-serif;
+@import url("https://fonts.googleapis.com/css?family=Cabin:400,400i,500&display=swap");
+
+body {
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Cabin", sans-serif;
+}
+
+em {
+  font-style: italic;
+  //   font-weight: lighter;
+}
+
+span {
+  font-size: 1rem;
+}
+
+// setting font size
+html {
+  font-size: 62.5%;
+}
+
+body {
+  @include fontSize(10);
+}
+
+h1 {
+  font-size: 3.6rem;
+}
+
+h2 {
+  width: 100%;
+  text-align: center;
+  font-size: 4.8rem;
+}
+
+h3 {
+  font-size: 1rem;
+}
+
+p {
+  font-size: 1.2rem;
+  // font-weight: 600;
+  // line-height: 35px;
+  // color: #777777;
+}
+
+footer {
+  font-family: "Cabin", sans-serif;
+}
+
+// wrapper styles
+.wrapper {
+  max-width: 1440px;
+  width: 60%;
+  margin: 0 auto;
+}
+
+// stripping anchor tag default styling
+a {
+  text-decoration: none;
+}
+
+// stripping ul default styling
+ul {
+  list-style: none;
+}
+
+// stripping default margin/padding
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+// image taking up 100% width
+img {
+  width: 100%;
+  object-fit: cover;
+  // display: block;
+}
+
+// uppercase
+a {
+  text-transform: uppercase;
+}
+
+// padding top and bottom to all sections
+section {
+  padding: 50px 0;
+}
+
+// button styles
+
+button {
+  padding: 10px 20px;
+  background-color: $primaryOrange;
+  border: none;
+}
+
+// custom padding and margins
+
+h2 {
+  padding-bottom: 30px;
+
+
+}

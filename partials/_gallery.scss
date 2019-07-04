@@ -1,0 +1,68 @@
+section.gallery {
+  background-color: $primaryBlack;
+  color: $primaryBeige;
+  // rid of padding bottom
+  padding: 50px 0 0 0;
+
+  img {
+    // same height so images looks even
+    height: 170px;
+  }
+
+  // gallery content
+  article.gallery-contents {
+    @include flexCenter;
+    flex-wrap: wrap;
+  }
+  // end of gallery content
+
+  // gallery-menu
+  nav.gallery-menu {
+    @include flexCenter;
+
+    ul {
+      display: flex;
+      justify-content: center;
+      border: 1px solid grey;
+      padding: 10px;
+      margin: 50px 0;
+
+      li {
+        margin: 0 5px;
+
+        a {
+          color: $primaryBeige;
+          padding-right: 5px;
+          border-right: 1px solid grey;
+        }
+      }
+    }
+  }
+  // end of gallery-menu
+
+  // gallery-images
+  ul.gallery-images {
+    display: flex;
+    flex-wrap: wrap;
+    li {
+      width: calc(100% / 5);
+    }
+  }
+  figure {
+    position: relative;
+    margin: 0;
+  }
+
+  figcaption {
+    @include position(absolute, 0, 0, 0, 0);
+    text-align: center;
+    display: none;
+    color: white;
+  }
+
+  figure:hover figcaption {
+    background-color: rgba(0, 0, 0, 0.5);
+    display: block;
+  }
+}
+// end of gallery-images

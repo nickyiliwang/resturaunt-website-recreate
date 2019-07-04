@@ -1,0 +1,27 @@
+section.services {
+  background-color: $primaryWhite;
+
+  img {
+  }
+
+  // services content
+  article.services-contents {
+    @include flexCenter;
+    flex-wrap: wrap;
+  }
+
+  .services-cards {
+    @include flexCenter;
+
+    figure {
+      @include flexCenter;
+      flex-wrap: wrap;
+      width: calc(100% / 4);
+      text-align: center;
+
+      div {
+        width: 50%;
+      }
+    }
+  }
+}

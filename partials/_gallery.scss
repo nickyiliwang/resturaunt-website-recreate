@@ -6,13 +6,18 @@ section.gallery {
 
   img {
     // same height so images looks even
-    height: 170px;
+    height: 200px;
   }
 
   // gallery content
   article.gallery-contents {
     @include flexCenter;
     flex-wrap: wrap;
+    p {
+      padding: 30px;
+      width: 80%;
+      text-align: center;
+    }
   }
   // end of gallery content
 
@@ -25,14 +30,14 @@ section.gallery {
       justify-content: center;
       border: 1px solid grey;
       padding: 10px;
-      margin: 50px 0;
+      margin: 30px 0;
 
       li {
-        margin: 0 5px;
+        margin: 0 10px;
 
         a {
           color: $primaryBeige;
-          padding-right: 5px;
+          padding: 0 15px;
           border-right: 1px solid grey;
         }
       }
@@ -58,11 +63,18 @@ section.gallery {
     text-align: center;
     display: none;
     color: white;
+    padding-top: 60px;
+    @include fontSize(20);
   }
 
   figure:hover figcaption {
     background-color: rgba(0, 0, 0, 0.5);
     display: block;
   }
+
 }
 // end of gallery-images
+
+#{$anchorTagHoverFocus} {
+  text-decoration: underline;
+}

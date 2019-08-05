@@ -1,7 +1,7 @@
 aside {
   @include position(absolute, 0, 0, 0, 0);
   @include flexCenter;
-  justify-content: space-between;
+  justify-content: space-evenly;
   flex-direction: column;
   min-height: 100vh;
   background-color: rgba($primaryBlack, 0.6);
@@ -24,11 +24,30 @@ aside {
     }
   }
 
-  
+  .nav-socials {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 50px 50px;
+    width: 100%;
 
+    a {
+      @include fontSize(30);
+      margin: 10px;
+      color: $primaryOrange;
+    }
+
+    h3,
+    p {
+      @include fontSize(12);
+      color: rgba($primaryWhite, 0.5);
+      word-wrap: break-word;
+      padding: 10px;
+    }
+  }
+  // end of nav-socials
 }
 //  end of aside
-
 
 #{$anchorTagHoverFocus} {
   color: $primaryWhite;

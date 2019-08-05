@@ -2,29 +2,58 @@ section.about {
   background: url(../styles/images/Chef-ramses-cousin-fullsize.jpeg) no-repeat;
   background-size: 50%;
   background-position: right;
+  
   background-color: $primaryBackground;
   @include flexCenter;
+  height: auto;
+  padding: 100px 0 100px;
 
   article {
     width: 50%;
-    margin: 100px 0;
 
     div.name-card {
       display: flex;
       flex-wrap: wrap;
       flex-direction: row;
+      margin: 20px 0;
     }
 
     .profile-content {
-      width: 80%;
+        width: 80%;
+        padding: 10px;
+        h2 {
+            font-family: "Open Sans", sans-serif;
+            font-weight: 400;
+            @include fontSize(24);
+        }
+        h3 {
+            color: $primaryOrange;
+        }
+    }
+    
+    div.profile-pic {
+        width: 20%;
+        
+        img {
+            border-radius: 50%;
+        }
+    }
+    // end of profil-pic
+    
+    p {
+        line-height: 25px;
     }
 
-    div.profile-pic {
-      width: 20%;
+    p:nth-of-type(1) {
+        margin: 20px 0;
+    }
 
-      img {
-        border-radius: 50%;
-      }
+    p:nth-of-type(2) {
+        margin: 20px 0;
+        
+        color: $navFooterBackground;
     }
   }
+  // end of article
 }
+// end of section

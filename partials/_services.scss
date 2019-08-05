@@ -1,13 +1,18 @@
 section.services {
   background-color: $primaryWhite;
-
-  img {
-  }
+  padding: 50px 0;
 
   // services content
   article.services-contents {
     @include flexCenter;
     flex-wrap: wrap;
+    p {
+      padding: 30px 0 50px;
+      width: 80%;
+      text-align: center;
+      color: $primaryBlack;
+      line-height: 20px;
+    }
   }
 
   .services-cards {
@@ -19,9 +24,17 @@ section.services {
       width: calc(100% / 4);
       text-align: center;
 
-      div {
-        width: 50%;
+      h3 {
+      @include fontSize(24);
+      font-weight: 400;
+      padding: 30px;
+      color: $primaryOrange;
       }
+
+      p {
+        font-style: none; 
+      }
+
     }
   }
 }
